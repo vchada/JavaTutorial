@@ -16,7 +16,7 @@ public class JDBCDemo
          String jdbc_url = "jdbc:mysql://localhost:3306?serverTimezone=UTC";
 
          String username = "root";
-         String password = "Vedha@4321";
+         String password = "Ravi27india";
 
         Connection connection = null;
         Statement statement = null;
@@ -35,10 +35,10 @@ public class JDBCDemo
 
 
     }
-
+        //sdkman
     public void DisplayTableRecords(Statement statement,Connection connection) throws SQLException
     {
-        String sql = "select * from venkat.students";
+        String sql = "select * from teja.Students";
 
         //executing query
         statement = connection.createStatement();
@@ -48,7 +48,7 @@ public class JDBCDemo
         //store in result set and extract from result set
         while(rs.next())
         {
-            String name = rs.getString("name");
+            String name = rs.getString("Name");
             int id = rs.getInt("id");
             String dept = rs.getString("dept");
             String degree = rs.getString("degree");
